@@ -13,4 +13,13 @@
 	flex: 1 1 100%;
 	padding-left: @grid-gutter/2;
 	padding-right: @grid-gutter/2;
+
+	.grid(@counter) when (@counter > 0) {
+		&.column-@{counter} {
+			flex-basis: (100% / 12 * @counter);
+			max-width: (100% / 12 * @counter);
+		}
+		.grid(@counter - 1);
+	}
+	.grid(12);
 }

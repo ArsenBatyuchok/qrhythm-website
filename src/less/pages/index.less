@@ -1,3 +1,4 @@
+// HEADER
 .header {
 	position: absolute;
 	width: 100%;
@@ -19,8 +20,8 @@
 		height: 20px;
 	}
 }
+// BANNER
 .banner-section {
-	height: 100vh;
 	position: relative;
 	background: url(@banner-src) no-repeat 50% 50%;
 	background-size: cover;
@@ -39,6 +40,65 @@
 		line-height: 1.2;
 		max-width: 560px;
 	}
+}
+// USEFUL
+.useful-section {
+	.benefits-section {
+		margin-top: 100px;
+	}
+	.benefit {
+		.img-wrapper {
+			position: relative;
+			width: 234px;
+			height: 231px;
+			margin-bottom: 70px;
+			.bg {
+				width: 100%;
+				height: 100%;
+				border-radius: 100px;
+				position: absolute;
+			}
+			.benefit-img {
+				position: relative;
+				z-index: 1;
+				margin: 0 auto;
+				display: block;
+			}
+			&.plane {
+				.bg {
+					background-color: #F8F5FF;
+				}
+				.benefit-img {
+					max-width: 150px;
+					top: 10px;
+				}
+				
+			}
+			&.balloon {
+				.bg {
+					background-color: #F5F6FF;
+				}
+				.benefit-img {
+					max-width: 176px;
+					top: 18px;
+					right: 6px;
+				}
+			}
+			&.ufo {
+				.bg {
+					background-color: #ECF8FF;
+				}
+				.benefit-img {
+					max-width: 183px;
+					top: 35px;
+				}
+			}
+		}
+	}
+}
+// CMANAGER
+.cmanager-section {
+	background-color: #F6F3FF;
 }
 
 @keyframes imageAnimHueRotate {

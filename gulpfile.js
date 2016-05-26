@@ -76,7 +76,7 @@ gulp.task('styles', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(minifyCss())
+        // .pipe(minifyCss())
         .pipe(gulp.dest(cssDist))
         .pipe(connect.reload());
 });
