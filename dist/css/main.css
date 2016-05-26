@@ -538,7 +538,7 @@ p.large {
   height: 100%;
   position: absolute;
   background: rgba(13, 0, 46, 0.82);
-  animation: imageAnimHueRotate 10s infinite !important;
+  animation: imageAnimHueRotate 20s infinite !important;
 }
 .banner-section p.large {
   font-size: 33px;
@@ -593,6 +593,6 @@ p.large {
 }
 @keyframes imageAnimHueRotate {
   50% {
-    -webkit-filter: hue-rotate(90deg) contrast(1);
+    -webkit-filter: hue-rotate(60deg) contrast(1);
   }
 }
