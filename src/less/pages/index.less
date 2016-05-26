@@ -1,0 +1,48 @@
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 80px;
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	.email {
+		margin-top: 1px;
+	}
+	.logo {
+		background: url(@logo-src) no-repeat 0 0;
+		background-size: cover;
+		width: 180px;
+		height: 20px;
+	}
+}
+.banner-section {
+	height: 100vh;
+	position: relative;
+	background: url(@banner-src) no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+	color: #F2F2FF;
+	&:before {
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: @banner-background-overlay;
+		animation: imageAnimHueRotate 10s infinite !important;
+	}
+	p.large {
+		font-size: 33px;
+		line-height: 1.2;
+		max-width: 560px;
+	}
+}
+
+@keyframes imageAnimHueRotate {
+    50% {
+    	-webkit-filter: hue-rotate(90deg) contrast(1);
+  	}
+}
