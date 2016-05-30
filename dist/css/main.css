@@ -385,6 +385,9 @@ textarea {
 .pull-left {
   float: left;
 }
+.parent-max-width {
+  max-width: 100%;
+}
 @media (min-width: 500px) {
   .pull-left-sm {
     float: left;
@@ -488,7 +491,6 @@ h2,
   font-size: 36px;
   line-height: 1.277;
   font-weight: 600;
-  margin-top: 90px;
 }
 h4,
 .h4 {
@@ -504,6 +506,9 @@ p.large {
 .xlarge {
   font-size: 48px;
   line-height: 1.2;
+}
+.non-margin {
+  margin: 0;
 }
 .header {
   position: absolute;
@@ -546,7 +551,8 @@ p.large {
   max-width: 560px;
 }
 .useful-section .benefits-section {
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 .useful-section .benefit .img-wrapper {
   position: relative;
@@ -591,8 +597,97 @@ p.large {
 .cmanager-section {
   background-color: #F6F3FF;
 }
+.who-needs-section {
+  position: relative;
+  background-color: #F5F6FF;
+  overflow: hidden;
+}
+.who-needs-section:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 229, 251, 0.82);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-35deg);
+  transform-origin: bottom;
+}
+.who-needs-section .content {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.how-it-works h2 {
+  font-weight: 500;
+  margin-top: 90px;
+}
+.how-it-works .description {
+  margin-bottom: 80px;
+}
+.how-it-works .description p {
+  color: #606060;
+}
+.how-it-works .scale-content {
+  margin: 80px 0 70px;
+}
+.how-it-works .scale-content .scale-img {
+  background: url('../img/scale.png') no-repeat 0 0;
+  background-size: cover;
+  width: 63px;
+  height: 120px;
+}
+.how-it-works .scale-content .scale-img.last {
+  height: 70px;
+}
+.how-it-works .scale-content h5 {
+  margin: 0 0 3px 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.how-it-works .scale-content h5.nested {
+  margin: 0;
+  position: absolute;
+  bottom: 3px;
+}
+.how-it-works .scale-content p {
+  margin: 5px 0 30px;
+}
+.how-it-works .scale-content hr {
+  border: none;
+  border-top-width: 1px;
+  border-top-style: solid;
+  margin: 0;
+}
+.how-it-works .scale-content .hr-1 {
+  border-color: #EAB9B9;
+}
+.how-it-works .scale-content .hr-2 {
+  border-color: #EACFB9;
+}
+.how-it-works .scale-content .hr-3 {
+  border-color: #B9EACC;
+}
+.how-it-works .scale-content .hr-4 {
+  border-color: #B9D6EA;
+}
+footer {
+  background: #E5E8FC;
+}
+footer .contacts-msg {
+  font-size: 18px;
+  margin: 90px 0;
+}
+footer a {
+  color: #007AFF;
+  text-decoration: none;
+}
 @keyframes imageAnimHueRotate {
   50% {
     -webkit-filter: hue-rotate(60deg) contrast(1);
+  }
+}
+@media (min-width: 768px) {
+  .who-needs-section p {
+    margin-top: 100px;
   }
 }
